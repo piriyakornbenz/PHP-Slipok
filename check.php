@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
 
-    if (isset($uploadPath)) unlink($uploadPath);
+    // if (isset($uploadPath)) unlink($uploadPath);
 
     if ($response) {
         $json_response = json_decode($response);
